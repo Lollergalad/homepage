@@ -1,0 +1,38 @@
+.nav {
+  margin-right: 1rem;
+  margin-left: 1rem;
+
+  .navContainer {
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+
+    .navBrand {
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+  
+    .navLinks {
+      display: flex;
+      justify-content: flex-end;
+
+      .navLinksList {
+        list-style: none;
+
+        .navItem {
+          .navLink {
+            text-decoration: none;
+
+            &:not(:last-child) {
+              padding-right: 1rem;
+            }
+            
+          }
+        }
+      }
+    }
+  }
+
+  
+}
