@@ -1,19 +1,15 @@
-import { Navigate, Route, Routes } from "react-router-dom";
+import { memo } from "react";
 
 import Home from "./components/Home/Home";
-import Info from "./components/Info/Info";
-import Layout from "./components/Layout/Layout";
+// import About from "./components/About/About";
 
 const App = () => {
   return (
-    <Routes>
-      <Route path="/" element={<Layout />}>
-        <Route index element={<Home />} />
-        <Route path="info" element={<Info />} />
-      </Route>
-      <Route path="*" element={<Navigate to="/" replace />} />
-    </Routes>
+    <>
+      <Home />
+      {/* <About /> */}
+    </>
   );
 };
 
-export default App;
+export default memo(App);
