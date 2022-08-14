@@ -1,22 +1,35 @@
+import classNames from "classnames";
+
+import profilePicture from "./profile_picture.png";
+
+import classes from "./About.module.scss";
+
 const About = () => {
   return (
-    <div>
-      <div>
-        Hi, my name is Norbert. I'm a Hungarian web developer living and working
-        in Budapest, Hungary.
+    <section className={classes.about}>
+      <div className={classes.picture}>
+        <img src={profilePicture} alt="profile_picture" />
       </div>
-      <div>
-        In my 6+ year technical carrer I have worked with a lot of websites,
-        wrote code in the backend and frontend as well, tried to find the best
-        solutions and tried to improve myself code by code.
+      <div
+        className={classNames(classes.description, classes.shortDescription)}
+      >
+        <div>
+          I'm a Hungarian Web Developer living/working in Budapest, Hungary.
+        </div>
+        <br />
+        <div>
+          I studied the University of Miskolc, where I learned Software
+          Engineering and earned my bachelor's (2014) and master's (2016)
+          degree.
+        </div>
+        <br />
+        <div>
+          I worked in Miskolc at first, where I started to learn the basics of
+          web development. Later I moved to Budapest after. I love Budapest,
+          there are so many opportunities, places to visit.
+        </div>
       </div>
-      <div>
-        My carrer started at evosoft Hungary Kft. (owned by Siemens) as a member
-        of a small team. Our main focus was to create websites for engines.
-      </div>
-      <div>MNB stuff</div>
-      <div>Andrews stuff</div>
-    </div>
+    </section>
   );
 };
 

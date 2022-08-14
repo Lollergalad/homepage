@@ -1,10 +1,9 @@
 import classNames from "classnames";
 
-import classes from "./Home.module.scss";
 import useTypeHook from "../../hooks/useTypeHook";
 import TYPE_PHASES from "../../constants/typePhase";
 
-// import logo from "./logo.svg";
+import classes from "./Home.module.scss";
 
 // ref: https://jigarsable.netlify.app/#experience
 
@@ -19,9 +18,6 @@ const Home = () => {
 
   return (
     <section className={classes.home}>
-      {/* <div className={classes.imageContainer}>
-        <img src={logo} alt="avatar" />
-      </div> */}
       <div className={classes.welcomeText}>
         <div className={classes.static}>Welcome,</div>
         <div className={classes.static}>I'm Norbert Urbán</div>
@@ -38,25 +34,16 @@ const Home = () => {
           </span>
         </div>
       </div>
+      <div className={classes.circles}>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 340">
+          <circle cx="170" cy="170" r="160" stroke="#00c0f5" />
+          <circle cx="170" cy="170" r="135" stroke="#465060" />
+          <circle cx="170" cy="170" r="110" stroke="#00c0f5" />
+          <circle cx="170" cy="170" r="85" stroke="#465060" />
+        </svg>
+      </div>
     </section>
   );
 };
 
 export default Home;
-
-// <div className="App">
-//   <header className="App-header">
-//     <img src={logo} className="App-logo" alt="logo" />
-//     <p>
-//       Edit <code>src/App.js</code> and save to reload.
-//     </p>
-//     <a
-//       className="App-link"
-//       href="https://reactjs.org"
-//       target="_blank"
-//       rel="noopener noreferrer"
-//     >
-//       Learn React
-//     </a>
-//   </header>
-// </div>

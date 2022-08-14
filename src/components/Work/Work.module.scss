@@ -1,0 +1,131 @@
+.jobs {
+  min-height: 100vh;
+  background-color: aliceblue;
+  padding: 5rem;
+
+  .description {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+
+    div {
+      width: 47%;
+      font-size: calc(0.5rem + 2vmin);
+      text-align: justify;
+    }
+  }
+
+  // For timeline item shadow, or stg else
+  // box-shadow: rgb(0 192 245 / 40%) -5px 5px, rgb(0 192 245 / 30%) -10px 10px, rgb(0 192 245 / 20%) -15px 15px, rgb(0 192 245 / 10%) -20px 20px, rgb(0 192 245 / 5%) -25px 25px;
+
+  .workplaces {
+    .verticalTimeline {
+      max-width: none;
+    }
+
+    .date {
+      padding: 0.3em 0;
+      font-size: calc(0.2rem + 2vmin);
+    }
+
+    .title {
+      font-size: calc(0.4rem + 2vmin);
+      font-weight: 600;
+    }
+
+    .location {
+      font-size: calc(0.4rem + 2vmin);
+    }
+
+    .info {
+      margin-top: 1rem;
+      font-size: calc(0.1rem + 2vmin);
+      text-align: justify;
+
+      .imgContainer {
+        margin-top: 1rem;
+        text-align: center;
+
+        .andrewsLogo {
+          width: 50%;
+        }
+
+        .evoLogo {
+          width: 30%;
+        }
+
+        .mnbLogo {
+          width: 20%;
+        }
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 1169px) {
+  .jobs {
+    padding: 5rem 3rem;
+
+    .description {
+      div {
+        width: 60%;
+      }
+    }
+
+    .workplaces {
+      .date {
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      .info{
+        .imgContainer {
+          margin-top: 2rem;
+          margin-bottom: 2rem;
+
+          .andrewsLogo {
+            width: 40%;
+          }
+  
+          .evoLogo {
+            width: 30%;
+          }
+  
+          .mnbLogo {
+            width: 20%;
+          }
+        }
+
+       
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .jobs {
+    padding: 5rem 1rem;
+
+    .workplaces {  
+      // .date {
+      //   padding: 0.3em 0;
+      //   font-size: calc(0.2rem + 2vmin);
+      // }
+  
+      .title {
+        font-size: calc(0.4rem + 2vmin);
+        font-weight: 600;
+      }
+  
+      .location {
+        font-size: calc(0.4rem + 2vmin);
+      }
+  
+      .info {
+        margin-top: 1rem;
+        font-size: calc(0.3rem + 2vmin);
+      }
+    }
+  }
+}
